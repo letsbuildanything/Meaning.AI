@@ -1,3 +1,13 @@
+## To run this project on your local development setup
+1. clone it
+2. create a .env file at the root of the project and provide openai api key under the variable VITE_OPENAI_API_KEY=<api_key>
+3. npm install (inside terminal)
+4. npm run build (inside terminal)
+(dist folder would be created)
+5. go to manage extension of chrome and enable developer mode. And lastly, upload dist folder by clicking load unpacked
+6. to use this extension, just select any word/phrase and right click on the selected word. It will show context menu, you just need to click Explain <your selected word/phrase>.
+7. a sidebar will popup on right side of browser window. keep patience.. it will show the result after a little while.
+
 # Meaning.AI - Chrome Extension for Instant Word and Phrase Meanings
 
 ## Project Overview
