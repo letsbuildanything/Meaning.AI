@@ -1,18 +1,25 @@
 {
     "manifest_version": 3,
-    "name": "Tab Manager for Chrome Dev Docs",
+    "name": "Meaning.Ai",
     "version": "1.0",
     
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["src/content.jsx"]
+        "js": ["src/content_scripts/content.jsx"]
       }
     ],
+
+    "background": {
+      "service_worker": "src/service_workers/background.js"
+  },
 
     "action": {
       "default_popup": "index.html"
     },
-    "permissions": ["tabGroups", "scripting"]
+    "permissions": ["tabGroups", "scripting", "contextMenus"],
+    "host_permissions": [
+      "https://www.api.openai.com/*"
+    ]
     
   }
