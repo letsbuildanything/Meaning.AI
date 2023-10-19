@@ -1,12 +1,14 @@
-## To run this project on your local development setup
-1. clone it
-2. create a .env file at the root of the project and provide openai api key under the variable VITE_OPENAI_API_KEY=<api_key>
-3. npm install (inside terminal)
-4. npm run build (inside terminal)
-(dist folder would be created)
-5. go to manage extension of chrome and enable developer mode. And lastly, upload dist folder by clicking load unpacked
-6. to use this extension, just select any word/phrase and right click on the selected word. It will show context menu, you just need to click Explain <your selected word/phrase>.
-7. a sidebar will popup on right side of browser window. keep patience.. it will show the result after a little while.
+## To run this project on your local machine
+- clone it
+- npm install
+- npm run build
+- dist folder will be created if no error occured
+- Upload 'dist' folder to 'load unpacked' in manage extensions of chrome browser
+- get your openai api key from 'platform.openai.com' (Make sure you must have credit in your account)
+- Authenticate yourself with API key by opening popup window of Meaning.Ai inside Extension puzzle icon at top right corner of browser window
+- If everything has been executed without errors, then it should function properly.
+- Now, select any word/sentence and go to Meaning.Ai on your right click context menu option and select desire options(i.e. ChatGpt: word, ChatGpt: Sentence, dict for faster response)
+- Result should be displayed at right window which pop up after your click on selected option
 
 # Meaning.AI - Chrome Extension for Instant Word and Phrase Meanings
 
